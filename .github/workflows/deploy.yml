@@ -1,0 +1,15 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - 'main'
+    
+jobs:
+  build:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Test
+      run: echo 'Hej'
